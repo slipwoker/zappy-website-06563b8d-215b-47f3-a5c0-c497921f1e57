@@ -2,13 +2,13 @@
 
 A personal or curated watch collection showcase, centered around horology and timepieces. The collection may span vintage, luxury, or modern watches, with a focus on presenting each piece with elegance and detail. The landing page aims to highlight the passion and craftsmanship behind the collection.
 
-Source: https://-06563b8d.zappy5.app
+Source: https://example.com
 
 ---
 
 ## גלו את עולם ההורולוגיה — תצוגת השעונים של מאור
 
-URL: https://-06563b8d.zappy5.app
+URL: https://example.com
 Description: התאהבו באוסף שעוני וינטג&#39; נדירים ויוקרתיים המוצגים בקפידה. חוויה הורולוגית עשירה שמחברת בין אומנות, זמן ותשוקה. היכנסו עכשיו והתרשמו!
 
 גלו את עולם ההורולוגיה — תצוגת השעונים של מאור
@@ -578,7 +578,7 @@ Time is a collection of moments. — מ'
 
 ## מדיניות פרטיות
 
-URL: https://-06563b8d.zappy5.app/privacy
+URL: https://example.com/privacy
 Description: מדיניות הפרטיות שלנו - כיצד אנו אוספים, משתמשים ומגנים על המידע שלכם
 
 מדיניות פרטיות
@@ -855,7 +855,7 @@ Description: מדיניות הפרטיות שלנו - כיצד אנו אוספי
 
 ## הצהרת נגישות
 
-URL: https://-06563b8d.zappy5.app/accessibility
+URL: https://example.com/accessibility
 Description: הצהרת הנגישות שלנו - מחויבותנו לנגישות דיגיטלית
 
 הצהרת נגישות
@@ -1141,7 +1141,7 @@ Description: הצהרת הנגישות שלנו - מחויבותנו לנגיש�
 
 ## תנאי שימוש
 
-URL: https://-06563b8d.zappy5.app/terms
+URL: https://example.com/terms
 Description: תנאי השימוש באתר - הזכויות והחובות של המשתמשים
 
 תנאי שימוש
@@ -1446,7 +1446,7 @@ Description: תנאי השימוש באתר - הזכויות והחובות של
 
 ## Thank You | Maor's Watch Collection
 
-URL: https://-06563b8d.zappy5.app/thank-you
+URL: https://example.com/thank-you
 Description: Thank you for contacting us. We have received your message regarding our luxury watch collection (אספנות שעונים יוקרתיים בישראל), including models like the iw388105. We will reply shortly.
 
 Thank You | Maor's Watch Collection
