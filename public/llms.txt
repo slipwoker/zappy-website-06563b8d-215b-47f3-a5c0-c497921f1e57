@@ -1,0 +1,69 @@
+# תצוגת השעונים של מאור — Generative Engine Optimization Map
+
+> A personal or curated watch collection showcase, centered around horology and timepieces. The collection may span vintage, luxury, or modern watches, with a focus on presenting each piece with elegance and detail. The landing page aims to highlight the passion and craftsmanship behind the collection.
+
+---
+
+## Pages
+
+### דף הבית
+https://-06563b8d.zappy5.app
+התאהבו באוסף שעוני וינטג&#39; נדירים ויוקרתיים המוצגים בקפידה. חוויה הורולוגית עשירה שמחברת בין אומנות, זמן ותשוקה. היכנסו עכשיו והתרשמו!
+
+### Thank You | Maor's Watch Collection
+https://-06563b8d.zappy5.app/thank-you
+Thank you for contacting us. We have received your message regarding our luxury watch collection (אספנות שעונים יוקרתיים בישראל), including models like the iw388105. We will reply shortly.
+
+## Legal & Policy
+
+### Privacy Policy
+https://-06563b8d.zappy5.app/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://-06563b8d.zappy5.app/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://-06563b8d.zappy5.app/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+## How to Contact Us
+
+- (No contact details configured yet.)
+
+### Contact form
+- URL: https://-06563b8d.zappy5.app
+- Endpoint: https://-06563b8d.zappy5.app/api/email/contact-form
+- Method: POST
+- Content-Type: application/json
+- Fields:
+  - `name` (text)
+  - `email` (email)
+  - `message` (textarea)
+  - `privacy_consent` (checkbox)
+
+---
+
+# Business Context (for LLM understanding)
+
+## About תצוגת השעונים של מאור
+A personal or curated watch collection showcase, centered around horology and timepieces. The collection may span vintage, luxury, or modern watches, with a focus on presenting each piece with elegance and detail. The landing page aims to highlight the passion and craftsmanship behind the collection.
+
+## Target Audience
+- אספני שעונים יוקרתיים
+- חובבי הורולוגיה
+- אספני שעונים וינטג'
+
+## Industry
+Watch Collection / Horology
+
+---
+
+# Machine-readable feeds
+
+- Sitemap (XML): https://-06563b8d.zappy5.app/sitemap.xml
+- Robots: https://-06563b8d.zappy5.app/robots.txt
+- Flattened page text (for LLMs): https://-06563b8d.zappy5.app/llms-full.txt
