@@ -10,6 +10,10 @@
 https://example.com
 התאהבו באוסף שעוני וינטג&#39; נדירים ויוקרתיים המוצגים בקפידה. חוויה הורולוגית עשירה שמחברת בין אומנות, זמן ותשוקה. היכנסו עכשיו והתרשמו!
 
+### תודה על פנייתך
+https://example.com/thank-you
+תצוגת השעונים של מאור - תודה על פנייתך
+
 ## Legal & Policy
 
 ### Privacy Policy
@@ -39,10 +43,10 @@ Information about WCAG compliance and accessibility features.
 - Method: POST
 - Content-Type: application/json
 - Fields:
-  - `name` (text, required)
-  - `email` (email, required)
-  - `message` (textarea, required)
-  - `privacy_consent` (checkbox, required)
+  - `name` (text)
+  - `email` (email)
+  - `message` (textarea)
+  - `privacy_consent` (checkbox)
 
 ---
 
