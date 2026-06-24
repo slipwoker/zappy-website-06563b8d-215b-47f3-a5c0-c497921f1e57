@@ -1,4 +1,12 @@
-
+/* Zappy custom media fonts:start */
+@font-face {
+  font-family: 'bangers latin 400 1782287256096 9e9oot';
+  src: url('assets/bangers-latin-400-normal-1782287256096-9e9oot.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+/* Zappy custom media fonts:end */
 
 /* Self-hosted fonts (Inter + Rubik for multi-language support) */
 
@@ -177,7 +185,9 @@
   --reveal-distance: 12px;
 
   --accent-font: 'Cormorant Garamond', cursive;
-}
+
+  --heading-font: 'bangers latin 400 1782287256096 9e9oot', sans-serif;
+  --font-heading: 'bangers latin 400 1782287256096 9e9oot', sans-serif;}
 
 *,
 *::before,
@@ -249,7 +259,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'bangers latin 400 1782287256096 9e9oot', sans-serif;
   font-weight: var(--weight-heading);
   line-height: var(--leading-heading);
   letter-spacing: var(--tracking-heading);
@@ -2051,7 +2061,7 @@ main:not(.courses-page-main) { margin-top: 0 !important; padding-top: 0 !importa
 
 /* ===== COLUMNS ===== */
 .footer-col h4 {
-  font-family: 'Playfair Display', 'Times New Roman', serif;
+  font-family: 'bangers latin 400 1782287256096 9e9oot', sans-serif;
   font-size: 1.15rem;
   font-weight: 600;
   color: var(--text-light);
@@ -2802,7 +2812,7 @@ main { flex: 1 0 auto; }
 }
 
 .index-products-card-subtitle {
-  font-family: 'Lato', sans-serif;
+  font-family: 'bangers latin 400 1782287256096 9e9oot', sans-serif;
   font-size: var(--body);
   font-weight: var(--weight-body);
   line-height: var(--leading-body);
@@ -3389,7 +3399,7 @@ main { flex: 1 0 auto; }
 }
 
 .index-features-section__text {
-  font-family: 'Lato', sans-serif;
+  font-family: 'bangers latin 400 1782287256096 9e9oot', sans-serif;
   font-size: var(--body);
   font-weight: var(--weight-body);
   line-height: var(--leading-body);
@@ -3460,7 +3470,7 @@ main { flex: 1 0 auto; }
 }
 
 .index-testimonials-section .testimonials-header h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'bangers latin 400 1782287256096 9e9oot', sans-serif;
   font-size: var(--h2);
   font-weight: var(--weight-heading, 700);
   color: var(--text-dark);
@@ -3471,7 +3481,7 @@ main { flex: 1 0 auto; }
 }
 
 .index-testimonials-section .testimonials-subtitle {
-  font-family: 'Lato', sans-serif;
+  font-family: 'bangers latin 400 1782287256096 9e9oot', sans-serif;
   font-size: var(--body);
   font-weight: var(--weight-body, 400);
   color: var(--text-muted);
@@ -3729,7 +3739,7 @@ main { flex: 1 0 auto; }
 }
 
 .index-gallery-section .gallery-subtitle {
-  font-family: 'Lato', sans-serif;
+  font-family: 'bangers latin 400 1782287256096 9e9oot', sans-serif;
   font-size: var(--body);
   font-weight: var(--weight-body, 400);
   line-height: var(--leading-body, 1.7);
@@ -3851,7 +3861,7 @@ main { flex: 1 0 auto; }
 }
 
 .index-cta-section__subtitle {
-  font-family: 'Lato', sans-serif;
+  font-family: 'bangers latin 400 1782287256096 9e9oot', sans-serif;
   font-size: var(--body);
   font-weight: var(--weight-body);
   line-height: var(--leading-body);
@@ -4083,7 +4093,7 @@ body { font-family: var(--font-body); }
 h1, h2, h3, h4, h5, h6,
 .display-xl,
 [class*="-headline"],
-[class*="-hero-headline"] { font-family: var(--font-display); }
+[class*="-hero-headline"] { font-family: 'bangers latin 400 1782287256096 9e9oot', sans-serif; }
 .font-accent { font-family: var(--accent-font, var(--font-display)); }
 
 
