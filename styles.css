@@ -2646,8 +2646,12 @@ main { flex: 1 0 auto; }
   object-fit: cover !important; object-position: left center !important; margin: 0 !important; z-index: 0 !important;
 }
 [data-layout-spec="דף הבית-hero"]::before {
-  content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none;
-  background: linear-gradient(to left, var(--hero-fade-color, var(--bg-light, #ffffff)) 0%, var(--hero-fade-color, var(--bg-light, #ffffff)) 34%, transparent 72%);
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(to left, var(--hero-fade-color, var(--bg-light, #ffffff)) 0%, var(--hero-fade-color, var(--bg-light, #ffffff)) 32%, transparent 58%);
 }
 [data-layout-spec="דף הבית-hero"] > *:not(.hero-fade-img):not([data-hero-bg]):not(img):not(style):not(script) { position: relative; z-index: 2; }
 [data-layout-spec="דף הבית-hero"] .hero-fade-content {
@@ -4976,6 +4980,11 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 #mic-init-access-tool #mic-access-tool-general-button,
 ._access-icon {
   display: flex !important;
+}
+
+html[dir="rtl"] [data-layout-spec="דף הבית-hero"]::before {
+  content: '';
+  background: linear-gradient(to right, var(--hero-fade-color, var(--bg-light, #ffffff)) 0%, var(--hero-fade-color, var(--bg-light, #ffffff)) 28%, transparent 48%) !important;
 }
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
