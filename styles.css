@@ -4998,6 +4998,54 @@ html[dir="rtl"] [data-layout-spec="דף הבית-hero"]::before {
   content: '';
   background: linear-gradient(to right, var(--hero-fade-color, var(--bg-light, var(--background-color))) 0%, var(--hero-fade-color, var(--bg-light, var(--background-color))) 28%, transparent 48%) !important;
 }
+
+@keyframes hero-glow-pulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(184, 146, 74, 0.3), 0 0 60px rgba(192, 98, 58, 0.15); }
+  50% { box-shadow: 0 0 35px rgba(184, 146, 74, 0.5), 0 0 80px rgba(192, 98, 58, 0.25); }
+}
+
+.index-hero-section .hero-cta-row {
+  animation: hero-glow-pulse 3s ease-in-out infinite;
+}
+
+.index-hero-section .btn-primary {
+  box-shadow: 0 0 25px rgba(192, 98, 58, 0.4), 0 4px 20px rgba(0,0,0,0.15);
+  transition: all 0.4s var(--ease-emphasized, cubic-bezier(0.22, 0.61, 0.36, 1));
+}
+
+.index-hero-section .btn-primary:hover {
+  box-shadow: 0 0 45px rgba(192, 98, 58, 0.6), 0 8px 30px rgba(0,0,0,0.2);
+  transform: translateY(-2px);
+}
+
+.index-hero-section .hero-fade-img {
+  transition: transform 0.6s var(--ease-emphasized, cubic-bezier(0.22, 0.61, 0.36, 1));
+}
+
+.index-hero-section:hover .hero-fade-img {
+  transform: scale(1.03);
+}
+
+.index-hero-section .hero-cta-row {
+  position: relative;
+}
+
+.index-hero-section .hero-cta-row::before {
+  content: '';
+  position: absolute;
+  inset: -30px -40px;
+  background: radial-gradient(ellipse at center, rgba(184, 146, 74, 0.25) 0%, rgba(192, 98, 58, 0.1) 40%, transparent 70%);
+  border-radius: 50%;
+  z-index: -1;
+  pointer-events: none;
+  animation: hero-glow-pulse 3s ease-in-out infinite;
+}
+/* zappy-self-heal */
+.index-hero-section .hero-cta-row { position: relative !important; }
+
+/* zappy-self-heal */
+html body .index-hero-section .hero-cta-row { position: relative !important; }
+
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,

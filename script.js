@@ -1647,6 +1647,117 @@ window.onload = function() {
     }
 })();
 
+/* ZAPPY_CUSTOM_JS_START:608a3b1fb883 */
+(function () {
+  function __zappyCustomInit() {
+    try {
+(function() {
+  // Initialize cinematic hero motion when GSAP + ScrollTrigger are ready
+  function initCinematicHero() {
+    var hero = document.querySelector('.index-hero-section[data-cinematic-hero]');
+    if (!hero) return;
+
+    // Ensure GSAP and ScrollTrigger are available
+    if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') {
+      setTimeout(initCinematicHero, 200);
+      return;
+    }
+
+    // Register ScrollTrigger plugin
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Hero background image parallax depth
+    var heroBg = hero.querySelector('[data-hero-background]');
+    if (heroBg) {
+      gsap.to(heroBg, {
+        y: '8%',
+        scale: 1.08,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: hero,
+          start: 'top top',
+          end: 'bottom top',
+          scrub: true
+        }
+      });
+    }
+
+    // Hero visual / tilt card
+    var heroVisual = hero.querySelector('[data-tilt-card]');
+    if (heroVisual) {
+      hero.addEventListener('mousemove', function(e) {
+        var rect = hero.getBoundingClientRect();
+        var x = (e.clientX - rect.left) / rect.width - 0.5;
+        var y = (e.clientY - rect.top) / rect.height - 0.5;
+        gsap.to(heroVisual, {
+          rotationY: x * 8,
+          rotationX: -y * 8,
+          transformPerspective: 1000,
+          duration: 0.6,
+          ease: 'power2.out'
+        });
+      });
+      hero.addEventListener('mouseleave', function() {
+        gsap.to(heroVisual, {
+          rotationY: 0,
+          rotationX: 0,
+          duration: 0.8,
+          ease: 'power3.out'
+        });
+      });
+    }
+
+    // Glow follow on CTA row
+    var ctaRow = hero.querySelector('[data-glow-follow]');
+    if (ctaRow) {
+      hero.addEventListener('mousemove', function(e) {
+        var rect = ctaRow.getBoundingClientRect();
+        var x = ((e.clientX - rect.left) / rect.width) * 100;
+        var y = ((e.clientY - rect.top) / rect.height) * 100;
+        ctaRow.style.setProperty('--glow-x', x + '%');
+        ctaRow.style.setProperty('--glow-y', y + '%');
+      });
+    }
+
+    // Text stagger entrance
+    var textEls = hero.querySelectorAll('.display-xl, .eyebrow, .editorial-text p');
+    if (textEls.length) {
+      gsap.fromTo(textEls, 
+        { y: 40, opacity: 0 },
+        { 
+          y: 0, opacity: 1, 
+          duration: 0.9, 
+          stagger: 0.15,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: hero,
+            start: 'top 80%',
+            once: true
+          }
+        }
+      );
+    }
+  }
+
+  // Start when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCinematicHero);
+  } else {
+    initCinematicHero();
+  }
+})();
+    } catch (e) {
+      if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __zappyCustomInit);
+  } else {
+    __zappyCustomInit();
+  }
+})();
+/* ZAPPY_CUSTOM_JS_END:608a3b1fb883 */
+
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){
