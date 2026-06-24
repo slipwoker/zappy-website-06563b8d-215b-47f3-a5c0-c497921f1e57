@@ -6033,7 +6033,7 @@ html[dir="ltr"] .service-detail.service-reverse .service-detail-content { order:
 }
 
 
-/* ZAPPY_FADE_BLEED_HERO_GEOMETRY_V2_ENSURE — compact fade panel + inline-start copy lane for stored fade-bleed heroes */
+/* ZAPPY_FADE_BLEED_HERO_GEOMETRY_V2_ENSURE — gradual fade panel + inline-start copy lane for stored fade-bleed heroes */
 section[data-hero-treatment="fade-bleed"],
 [data-layout-spec="דף"],
 [data-layout-spec="דף הבית-hero"] {
@@ -6057,7 +6057,7 @@ section[data-hero-treatment="fade-bleed"]::before,
 [data-layout-spec="דף"]::before,
 [data-layout-spec="דף הבית-hero"]::before {
   content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none;
-  background: linear-gradient(to right, var(--hero-fade-color, var(--bg-light, #ffffff)) 0%, var(--hero-fade-color, var(--bg-light, #ffffff)) 32%, transparent 58%) !important;
+  background: linear-gradient(to right, var(--hero-fade-color, var(--bg-light, #ffffff)) 0%, var(--hero-fade-color, var(--bg-light, #ffffff)) 10%, transparent 58%) !important;
 }
 html[dir="rtl"] section[data-hero-treatment="fade-bleed"],
 html[dir="rtl"] [data-layout-spec="דף"],
@@ -6074,7 +6074,7 @@ html[dir="rtl"] [data-layout-spec="דף הבית-hero"] > img:first-child { obje
 html[dir="rtl"] section[data-hero-treatment="fade-bleed"]::before,
 html[dir="rtl"] [data-layout-spec="דף"]::before,
 html[dir="rtl"] [data-layout-spec="דף הבית-hero"]::before {
-  background: linear-gradient(to left, var(--hero-fade-color, var(--bg-light, #ffffff)) 0%, var(--hero-fade-color, var(--bg-light, #ffffff)) 32%, transparent 58%) !important;
+  background: linear-gradient(to left, var(--hero-fade-color, var(--bg-light, #ffffff)) 0%, var(--hero-fade-color, var(--bg-light, #ffffff)) 10%, transparent 58%) !important;
 }
 section[data-hero-treatment="fade-bleed"] .hero-fade-content,
 [data-layout-spec="דף"] .hero-fade-content,
